@@ -1,0 +1,49 @@
+body{
+    display: grid;
+    grid-template: 65px 180px 1fr 100px 150px/
+    200px minmax(max-content,1fr) 1fr 180px;
+    
+    background: url(../images/wave.svg) rgb(15,117,98);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+header{
+    display: grid;
+    grid-template-columns:200px 1fr 1fr 330px ;
+    grid-column: 1/ span 4;
+    
+    background-color: rgb(11,90,76);
+}
+
+div{
+    display: flex;
+    grid-column: 2;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+article{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: start;
+    align-self: end;
+    
+}
+
+aside{
+    grid-column: 2;
+    grid-row: 4;
+     
+    justify-self: center;   
+}
+
+img{
+    grid-column: 3;
+    grid-row: 3/ span 2;
+    
+    justify-self: start;
+}
+
